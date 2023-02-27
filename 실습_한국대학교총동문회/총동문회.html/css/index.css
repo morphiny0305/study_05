@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* reset */
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: "맑은 고딕";list-style: none;color: #333;}
+a{display: block;text-decoration: none;}
+img{display: block;}
+.hidden{display:none;}
+
+/* wrap--------------------------------------------------------------- */
+#wrap{width: 1200px; height: 700px; margin: auto;}
+
+/* header--------------------------------------------------------------- */
+header{width: 1200px; height: 100px; background-color: #FFc000;float: left;}
+
+/* 로고 */
+header h1{width: 200px; float: left;}
+header h1 a img{height: 100%;;}
+
+/* 메뉴공통 */
+header nav{float: right; position: relative; z-index: 10;}
+header nav ul li a{width: 210px; height: 60px; text-align: center;line-height: 60px; font-size: 22px; font-weight: bold;}
+
+/* 1차메뉴 */
+header nav ul.gnb > li{float: left; margin-top: 40px;}
+header nav ul.gnb > li:hover > a{background-color: #FF5050;border-radius: 10px;}
+
+/* 2차메뉴 */
+
+header nav ul.gnb > li > ul.sub{display: none;}
+header nav ul.gnb > li:hover > ul.sub{display: block;}
+header nav ul.gnb > li > ul.sub > li > a{background-color: lightcoral; color: #fff;}
+header nav ul.gnb > li > ul.sub > li:hover > a{text-decoration: underline;}
+
+/* main-slide------------------------------------------------------------- */
+.main-slide{width: 1200px; height: 300px; background-color: cornflowerblue;clear: both;position: relative;overflow: hidden;}
+.main-slide h2{position: absolute;z-index: 3;color: #FF5050; width: 450px; height: 140px; background-color: rgba(255, 255, 255, 0.3);right: 0; left: 0; top: 0;bottom: 0; margin: auto; font-size: 40px;text-align: center;text-shadow: 2px 2px 2px #333;padding-top: 15px; border-radius: 15px;}
+.main-slide h2 span{color: cornflowerblue;}
+.main-slide img{position: absolute;left: 0; top: 0; margin: auto;}
+
+
+/* section3------------------------------------------------------------- */
+.section-3{width: 1200px; height: 200px;clear: both;}
+/* 공지사항 배너 아이콘 공통 */
+.sec-all{width: 380px; height: 200px; float: left;}
+
+/* 공지사항 */
+.notice p{width: 100px; height: 30px; color: #FF5050;text-align: center; line-height: 30px;}
+.notice p.note{font-size: 21px; font-weight: bold;float: left;}
+.notice p.more{float: right;}
+
+.notice table{width: 380px;height: 60px;font-size: 12px;border-collapse: collapse; color: black; border-top: 3px solid #FF5050;}
+
+.notice ul.small{display: table-cell;vertical-align: middle;}
+.notice ul.small li{float: left;margin: auto;}
+.notice ul.small li img{width: 120px;}
+.notice ul.small li:nth-child(2) img{margin: 0 5px;}
+/* 배너 */
+.banner{margin: 0 30px;}
+.banner img{margin: 15px auto;}
+
+/* 아이콘 */
+.icon ul li a{width: 120px; height: 180px; float: left; margin-top: 10px;}
+.icon ul li:hover a{opacity: 50%;}
+.icon ul li:nth-child(2) a{margin:10px 10px 0;}
+.icon ul li a img{margin: auto;}
+.icon ul li a h3{width: 120px; height: 30px; text-align: center; line-height: 30px; border-radius: 10px; background-color: #FF5050;color: #fff;}
+
+/* footer--------------------------------------------------------------- */
+footer{width: 1200px; height: 100px;background-color:#FFc000;clear: both;}
+footer div{float: left; color: black;}
+
+/* 아래로고 */
+footer div.bottom-left{width: 200px;height: 100px;}
+
+/* 오른쪽 */
+footer div.bottom-right{font-size: 14px;}
+footer div.bottom-right nav ul li{float: left;margin: 15px 0;}
+footer div.bottom-right nav ul li:hover a{text-decoration: underline;}
+footer div.bottom-right nav ul li a::after{content: "|";padding: 0 10px;}
+footer div.bottom-right nav ul li:last-child a::after{content: " ";}
+
+footer div.bottom-right address{clear: both; font-style: normal;}

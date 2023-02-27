@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* 초기화 */
+*{margin: 0;padding: 0;}
+
+/* wrap 화면 가운데 정렬 */
+#wrap{
+    width: 960px;
+    height: 1200px;
+    background-color: bisque;
+    margin: auto;
+}
+/* header area */
+header{width: 100%;height: 150px;background-color: aquamarine;}
+header h1{width: 200px;height: 100px;background-color: coral;float: left;margin-top: 25px;}
+header nav{float: right;margin-top: 100px;}
+header nav ul li{list-style: none;display: inline-block;}
+header nav ul li a{display: block;width: 150px;height: 50px;background-color: blueviolet;color: azure;text-decoration: none;text-align: center;line-height: 50px;}
+header nav ul li a:hover{background-color: lightcoral;}
+
+/* main-slide area */
+#main-slide{width: 960px;height: 400px;background-color: tomato;position: relative;}
+/* #main-silde h2{line h} */
+#main-slide h2{width: 300px;height: 40px;text-align: center;line-height: 40px;position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;}
+
+/* c area */
+#sec-wrap{width: 960px;height: 500px;background-color: crimson;}
+#sec-wrap div.con{width: 480px;height: 300px;float: left;}
+#sec-wrap div.notice{background-color: aqua;}
+#sec-wrap div.partner{background-color: bisque;}
+#sec-wrap div h2{text-align: center;}
+
+#sec-wrap div.icon{width: 320px;height: 200px;float: left;}
+#sec-wrap div.icon1{background-color: blue;}
+#sec-wrap div.icon2{background-color: chartreuse;}
+#sec-wrap div.icon3{background-color: cornflowerblue;}
+
+/* footer */
+footer{clear: both;width: 960px;height: 150px;background-color: darkcyan;}

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* reset------------------------------------------------------------------------------------------------- */
+*{margin: 0; padding: 0; list-style: none; box-sizing: border-box;font-family: "맑은 고딕"; color: #666;}
+a{text-decoration: none;display: block;}
+img{display: block;}
+.hidden{display: none;}
+
+/* wrap 화면 가운데 정렬----------------------------------------------------------------------------- */
+#wrap{width: 1000px;height: 1000px;margin: auto;}
+
+/* header area-------------------------------------------------------------------------------------- */
+header{width: 1000px; height: 150px;float: left;}
+
+header h1{width: 205px; height: 134px;margin-top: 10px; float: left;}
+header nav{float: right;position: relative;z-index: 5;margin-top: 100px;}
+
+/* 1, 2차 공통 */
+header nav ul li a{width: 150px; height: 50px; text-align: center;line-height: 50px;}
+
+/* 1차 메뉴 */
+header nav ul.gnb > li{float: left;}
+header nav ul.gnb > li > a{font-size: 18px; font-weight: bold;}
+header nav ul.gnb > li:hover > a{background-color: #36f;color: white; transition: all 0.3s;}
+/* 2차 메뉴 */
+header nav ul.gnb > li > ul.sub{display: none;}
+header nav ul.gnb > li:hover > ul.sub{display: block;}
+header nav ul.gnb > li > ul.sub li a{background-color: rgba(255, 255, 255, 0.8);}
+header nav ul.gnb > li > ul.sub li a:hover{text-decoration: underline;}
+/* main-slide area-좌우 슬라이드----------------------------------------------------------------- */
+#main-slide{clear: both; width: 1000px; height: 400px; overflow: hidden;position: relative;}
+#main-slide ul.slide-img{width: 5000px;}
+#main-slide ul.slide-img li{float: left;}
+
+#main-slide ul.slide-dot{position: absolute; width: 95px;right: 0; left: 0;bottom: 30px; margin: auto;}
+#main-slide ul.slide-dot li{float: left; margin-right: 5px;}
+#main-slide ul.slide-dot li:last-child{margin-right: 0;}
+
+#main-slide div.slide-text{position: absolute;width: 200px;height: 80px;background-color: rgba(255, 255, 255, 0.8);font-size: 20px;text-align: center;font-weight: bold;line-height: 80px;border-radius: 10px; left: 0;right: 0;top: 0;bottom: 0;margin: auto;}
+
+/* 공지사항 partner----------------------------------------------------------------------- */
+section.sec-all{width: 500px; height: 270px;float: left;}
+section.sec-all h2{font-size: 20px; width: 480px;height: 30px; margin: 10px auto;border-bottom: 3px solid #36f;}
+section.sec-all h2::before{content: "▶";margin-right: 5px;}
+
+/* 공지사항 */
+.notice table{width: 480px;height: 200px; margin: auto; font-size: 14px;border-spacing: 3px;}
+.notice table tr th{background-color: #36f;color: #fff;}
+.notice table tr td{background-color: #999;color: #fff; text-indent: 5px;}
+.notice table tr td a{color: #fff;}
+.notice table tr td a:hover{text-decoration: underline;}
+
+/* partner */
+.partner a{width: 480px;margin: 36px auto 0;}
+.partner a img{width: 100%;}
+
+/* icon area --------------------------------------------------------------------------- */
+.icon-wrap{clear: both;width: 600px;height: 230px;margin: auto;}
+
+.icon-wrap div{float: left;width: 180px;cursor: pointer;}
+.icon-wrap div img{width: 100%;}
+.icon-wrap div:nth-child(2){margin: 0 30px;}
+.icon-wrap div h3{background-color: #999;height: 40px;width: 150px;border-radius: 10px;margin: auto;text-align: center;line-height: 40px;}
+.icon-wrap div:hover h3{background-color: #333;color: #fff;}
+.icon-wrap div:hover img{opacity: 0.5;}
+
+/* footer--------------------------------------------------------------- */
+footer{width: 1000px; height: 100px;background-color: #999;}
+footer div{width: 500px; height: 100px;float: left;}
+
+footer div.left nav ul{padding: 20px 0 0 100px;}
+footer div.left nav ul li{float: left;}
+footer div.left nav ul li a{color: #fff}
+footer div.left nav ul li a:hover{text-decoration: underline;}
+footer div.left nav ul li a::after{content: "|";padding: 0 10px;}
+footer div.left nav ul li:last-child a::after{content: "";}
+
+footer div.right address{color: #fff; font-size: 14px;font-style: normal;margin-top: 10px;}

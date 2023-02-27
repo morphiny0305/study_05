@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;font-family: "맑은 고딕"; list-style: none; color: black;}
+a{text-decoration: none; display: block; text-align: center} 
+#wrap{width: 1000px; height: 1180px; margin: auto;display: flex; flex-direction: column;box-sizing: border-box;}
+img{display: block;}
+
+
+/* header */
+header{width: 1000px;height: 180px; display: flex; justify-content: space-between;position: relative;}
+header h1{padding: 40px 0 0; width: 20%;}
+
+/* 메뉴 */
+header nav{width: 80%;z-index: 10;}
+header nav ul li a{width: 150px;height: 60px; line-height: 50px;}
+
+/* 1차메뉴 */
+header nav ul.gnb{display: flex; justify-content: flex-end; padding-top: 120px;}
+header nav ul.gnb > li > a{font-size: 22px; font-weight: bold;}
+header nav ul.gnb > li:nth-child(2){margin: 0 50px;}
+
+/* 2차메뉴 */
+header nav ul.gnb li ul.sub{display: none;}
+header nav ul.gnb li:hover ul.sub{display: block;}
+header nav ul.gnb li ul.sub > li a{background:rgba(255, 255, 255, 0.8);font-size: 18px;}
+header nav ul.gnb li ul.sub > li a:hover{font-weight: bold; color:#996699; text-decoration: underline; }
+/* main-slide */
+.main-slide{width: 1000px; height: 350px; position: relative; }
+.main-slide h2{width: 250px; height: 50px; background: rgba(255, 255, 255, 0.8); line-height: 50px; text-align: center; border-radius: 0 0 10px 10px;position: absolute; z-index: 5;right: 0;left: 0; top: 0; margin: auto;}
+.main-slide ul{width: 3000px; height: 350px;}
+.main-slide ul li{position: absolute;}
+
+
+/* note-section */
+.note-section{width: 1000px; height: 250px; display: flex; justify-content: space-around;}
+
+.note-section div{width: 480px; height: 100%;}
+.note-section div h2{text-align: center; width: 100%; height: 40px; border-bottom:3px solid #996699; line-height: 40px;}
+
+.notice table{width: 100%; margin-top: 10px;}
+.notice table tr{text-align: center; font-size: 15px;}
+.notice table tr th{background-color: #996699;color: white;padding: 5px 0;}
+.notice table tr td{background-color: #f0d7d7;padding: 5px 0;text-indent: 10px;}
+.notice table tr td a:hover{text-decoration: underline; font-weight: bold; color: #996699;}
+
+
+.note-section div.partner p.partner-wrap{width: 100%;display: flex; padding: 25px 0 0 ;}
+.note-section div.partner p.partner-wrap a img{width: 100%; height: 90px;}
+
+/* icon-wrap */
+.icon-wrap{width: 1000px; height: 250px; display: flex; justify-content: center;}
+.icon-wrap ul{width: 600px; height: 250px; display: flex;justify-content: space-around;}
+.icon-wrap ul li{width: 180px; height: 190px;display: flex;flex-wrap: wrap; justify-content: center;}
+.icon-wrap ul li a img{width: 180px;}
+.icon-wrap ul li a img:hover{filter: grayscale(100%);}
+.icon-wrap ul li h3{cursor: pointer; width: 150px; height: 40px; background: #996699; border-radius: 20px; text-align: center; line-height: 40px; color: #fff; font-size: 18px;}
+.icon-wrap ul li h3:hover{opacity: 40%; color: black;}
+
+
+/* footer */
+footer{width: 1000px; height: 150px;display: flex; background-color: #999;}
+footer div{width: 500px; height: 150px; font-size: 14px;}
+footer div.foot-left ul{display: flex; justify-content: center;padding-top: 40px;}
+footer div.foot-left ul li a::after{content: "|"; padding: 0 10px;}
+footer div.foot-left ul li:nth-child(3) a::after{content: " ";}
+footer div.foot-left ul li a:hover{text-decoration: underline;}
+
+footer div.foot-right{ padding-top: 10px;}
+footer div.foot-right address{font-style: normal;}

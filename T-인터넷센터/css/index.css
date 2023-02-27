@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* reset */
+*{margin: 0; padding: 0;list-style: none;color: #fff; font-family: "맑은 고딕";box-sizing: border-box;}
+a{text-decoration: none;display: block;}
+img{display: block;}
+body{background-color: #303030;}
+
+/* wrap area------------------------------------------------ */
+#wrap{width: 1000px; height: 1100px; margin: auto;}
+
+/* header------------------------------------------------------ */
+header{float: left; width: 100%; height: 150px;}
+
+/* header logo */
+header h1{width: 350px;height: 100px;float: left;margin-top: 20px;}
+header h1 a img{width: 100%;}
+
+/* header nav */
+header nav{float: right;position: relative;z-index: 5;margin-top: 100px;}
+
+
+/* 메뉴공통 */
+header nav ul.gnb li a{width: 150px;height: 50px;text-align: center;display: table-cell;vertical-align: middle;}
+
+/* 1차메뉴 */
+header nav ul.gnb > li{float: left;}
+header nav ul.gnb > li > a{font-weight: bold;font-size: 18px;transition: all 0.3s;}
+header nav ul.gnb > li:hover > a{background-color: rgba(255, 255, 255, 0.5);}
+
+/* 2차메뉴 */
+header nav ul.gnb > li > ul.sub{display: none;}
+header nav ul.gnb > li:hover > ul.sub{display: block;}
+header nav ul.gnb > li > ul.sub li a{color: #303030; background-color: rgba(255, 255, 255, 0.8);}
+header nav ul.gnb > li > ul.sub li a:hover{text-decoration: underline;}
+
+/* main-slide area : fade in/out------------------------------------- */
+.main-slide{clear: both; width: 1000px; height: 350px; background-color: bisque; position: relative;overflow: hidden;}
+.main-slide ul li a img{position: absolute; top: 0; left: 0;}
+.main-slide .text-wrap{position: absolute; width: 350px; height: 100px;background-color: rgba(255, 255, 255, 0.8);border-radius: 20px;left:0; right:0; top:0; bottom: 0;margin: auto;}
+.main-slide .text-wrap h2{color:#06c;text-align: center;margin: 10px 0;font-size: 30px;}
+.main-slide .text-wrap p{text-align: center;color: #303030;font-size: 20px;}
+
+/* 공지사항, 파트너 area--------------------------------------------- */
+.sec-all{width: 500px;height: 270px;float: left;padding: 10px;}
+.sec-all h2{text-align: center;height: 40px;border-bottom: 2px solid #fff;}
+
+/* 공지사항 */
+.notice table{width: 480px; height: 200px;border-collapse: collapse;}
+.notice table tr:nth-child(even){background-color: #69f;}
+.notice table tr th{color: #69f;}
+.notice table tr td{text-indent: 5x;}
+.notice table tr td a:hover{text-decoration: underline;}
+
+/* partner */
+.partner a{width: 480px;margin-top: 23px;}
+.partner a img{width: 100%;transition: all 0.3s;}
+.partner a img:hover{filter: grayscale(100%);}
+
+/* icon area----------------------------------------------------- */
+.icon-wrap{width: 850px; height: 230px; clear: both; margin: auto;}
+.icon-wrap div{width: 270px; height: 210px;float: left;cursor: pointer;}
+.icon-wrap div:nth-child(2){margin: 0 20px;}
+.icon-wrap div:hover{opacity: 0.5; background-color: rgba(255, 255, 255, 0.5);}
+.icon-wrap div img{margin: 20px auto 20px;}
+.icon-wrap div h3{text-align: center; color: #69f;}
+.icon-wrap div p{width: 240px; text-align: center; margin: auto;font-size: 15px;}
+
+/* footer area------------------------------------------------- */
+footer{width: 100%; height: 100px; background-color: #06c;}
+footer div{width: 500px; height: 100px;float: left;}
+
+/* 왼쪽 */
+footer div.bottom-left nav ul{margin: 20px 0 0 100px;}
+footer div.bottom-left nav ul li{float: left;}
+footer div.bottom-left nav ul li a{font-size: 14px;}
+footer div.bottom-left nav ul li a:hover{text-decoration: underline;}
+footer div.bottom-left nav ul li a::after{content: "|"; padding: 0 10px;}
+footer div.bottom-left nav ul li:last-child a::after{content: " ";}
+
+/* 오른쪽영역 */
+footer div.bottom-right address{font-style: normal; font-size: 14px;margin-top: 8px;}

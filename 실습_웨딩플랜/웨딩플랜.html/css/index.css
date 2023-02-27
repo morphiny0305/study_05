@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* reset */
+*{margin: 0;padding: 0;list-style: none;box-sizing: border-box; font-family: "맑은 고딕";color: #666;}
+.hidden{display: none;}
+a{text-decoration: none;display: block;}
+img{display: block;}
+
+/* wrap area --------------------------------------------------------------------------*/
+#wrap{width: 1000px; height: 1180px;margin: auto;}
+
+/* header area-------------------------------------------------------------------------*/
+header{width: 1000px; height: 180px;}
+
+/* logo */
+header h2{width: 300px; height: 100px; float: left;margin-top: 20px;}
+
+/* 1차 2차 공통 */
+header nav{float: right; text-align: center; line-height: 40px; position: relative;z-index: 3;}
+
+/* 1차 메뉴 */
+header nav ul.gnb > li{width: 180px; height: 40px; float: left;margin-top: 140px; font-size: 18px;font-weight: bold;color: #666}
+header nav ul.gnb > li > a:hover{background-color: #CC9999; color: #fff;}
+
+/* 2차메뉴 */
+header nav ul.gnb > li ul.sub{display: none;}
+header nav ul.gnb > li ul.sub li{width: 180px; height: 40px; background-color: #996699;}
+header nav ul.gnb > li ul.sub li > a:hover{background-color: #cc9999;color: white;}
+header nav ul.gnb > li:hover > ul.sub{display: block;}
+
+/* main slide */
+#main-slide{clear: both; width: 1000px; height: 350px; overflow: hidden;}
+#main-slide ul{width: 3000px;}
+#main-slide ul li{float: left;}
+
+#main-slide div.text-wrap{position: relative;}
+#main-slide div p.text1{position: absolute; right: 0;left: 0; margin: auto; width: 300px; height: 50px;background-color: rgba(255, 255, 255, 50%);font-size: 25px;text-align: center;line-height: 60px;color: #fff;font-weight: bold;}
+
+/* 공지사항, partner 공통 */
+.sec-all{width: 480px; height: 270px;float: left;}
+.sec-all h2{width: 480px;height: 30px;margin: 10px auto;text-align: center;line-height: 30px;}
+
+/* 공지사항------------------------------------------------------------------------ */
+#notice{}
+#notice h2{border-bottom: 2px solid #666;width: 480px; height: 40px;}
+#notice table{margin: auto; width: 470px; height: 200px; font-size: 17px;}
+#notice table tr:nth-child(even){background-color: rgb(222, 174, 135)}
+#notice table tr td a:hover{text-decoration: underline;}
+
+/* 파트너-------------------------------------------------------------------------- */
+#partner{margin-left: 20px; background-color: #cc9999;}
+#partner h2{}
+#partner h2 ul
+#partner h2 ul li{width: 470px; height: 200px;}
+#partner h2 ul li a{}
+#partner h2 ul li a img{}
+
+/* 아이콘-------------------------------------------------------------------------- */
+#icon-wrap{width: 800px; height: 230px;margin: auto;}
+#icon-wrap h2{}
+#icon-wrap figure{width:250px; height: 200px; float: left;}
+#icon-wrap figure img{}
+#icon-wrap figure img figcaption{}

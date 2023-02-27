@@ -1,0 +1,27 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;}
+
+#wrap{width: 960px; height: 1200px; margin: auto; background-color: beige;}
+
+header{width: 960px; height: 150px; background-color: aqua;}
+header h1{width: 200px;height: 100px; background-color: teal;text-align: center;line-height: 100px;float: left;color: #fff;margin: 20px 0 0 20px;}
+header h1:hover{background-color: crimson;color: darkgreen;}
+header nav{float: right;}
+header nav ul li{list-style: none;float: left; width: 150px; height: 50px;background-color: lightcyan;text-align: center;line-height: 50px;margin: 100px 0;font-weight: bold;}
+header nav ul li:hover{background-color: aquamarine;}
+
+#main-s{width: 960px; height: 400px;background-color: burlywood;position: relative;}
+#main-s h2{background-color: aquamarine;width: 300px;height: 50px;position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;text-align: center;line-height: 50px;border-radius: 30px;}
+
+#menu-s{width: 960px;height: 500px;}
+#menu-s div h2{text-align: center;}
+#menu-s div.tt{width: 480px; height: 300px;float: left;}
+#menu-s div.noti{background-color: cornflowerblue;}
+#menu-s div.partner{background-color: moccasin;}
+
+#menu-s div.menu2{width: 320px;height: 200px;float: left;}
+#menu-s div.tt1{background-color: rebeccapurple;}
+#menu-s div.tt2{background-color: violet;}
+#menu-s div.tt3{background-color: royalblue;}
+
+footer{clear: both;width: 960px;height: 150px;text-align: center;line-height: 150px;background-color: indigo;}

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* reset */
+*{margin: 0;padding: 0;list-style: none;font-family: "맑은 고딕";color: #fff;font-style: normal;}
+body{background-color: #303030;}
+a{text-decoration: none;display: block;}
+img{display: block;}
+.hidden{display: none;}
+
+/* wrap------------------------------------------------------------------------------------------ */
+#wrap{width: 1000px; height: 1100px; margin: auto;}
+
+/* header---------------------------------------------------------------------------------------- */
+header{width: 1000px; height: 150px;float: left;}
+
+header h1{width: 270px; height: 80px; float: left; margin: 30px 0 0 20px;}
+header h1 a img{width: 100%;}
+
+header nav{float: right;margin-top: 100px;}
+
+/* 1차메뉴 */
+header nav ul.first > li{float: left;position: relative; z-index: 5;}
+header nav ul.first > li > a{width: 160px; height: 50px; text-align: center; line-height: 50px;font-size: 18px;font-weight: bold;}
+header nav ul.first > li:hover > a{background-color: #6699ff;}
+
+/* 2차메뉴 */
+header nav ul.first > li > ul.sub{display: none;}
+header nav ul.first > li:hover > ul.sub{display: block;}
+header nav ul.first > li > ul.sub li a{width: 160px; height: 40px; background-color: #0066cc; text-align: center; line-height: 40px;}
+header nav ul.first > li > ul.sub li a:hover{text-decoration: underline;}
+
+/* main slide */
+#main-slide{clear: both; width: 1000px; height: 350px;position: relative;z-index: 1; overflow: hidden;}
+#main-slide ul li > a img{display: absolute;}
+
+#main-slide p{position:absolute; z-index: 3;background-color: rgba(255, 255, 255, 0.8); width: 280px; height: 100px; text-align: center;line-height: 2.5;border-radius: 10px; color: #000; left:0; top:0; right:0; bottom: 0; margin: auto;}
+span{font-size: 23px;font-weight: bold; color: #0066cc;}
+
+/* 공지사항과 파트너 */
+.sec-all{width: 480px; height: 270px;float: left; margin: 0 10px 0;}
+.sec-all h2{width: 480px; height: 50px; text-align: center;line-height: 50px;  border-bottom: 3px double #0066cc;}
+
+/* 공지사항 */
+.notice table{width: 480px;height: 200px; font-size: 15px;}
+.notice table tr th{color: #0066cc; font-size: 16px;}
+.notice table tr td{text-indent: 10px;}
+.notice table tr:nth-child(even){background-color: #6699ff;}
+.notice table tr td a:hover{text-decoration: underline;}
+/* 파트너 */
+.partner{width: 480px; height: 270px; ;}
+.partner div.img-wrap{margin: auto;}
+.partner div.img-wrap a{}
+.partner div.img-wrap a img{width: 100%; height: 200px;}
+
+/* 아이콘*/
+#icon{clear: both; width: 860px; height: 230px; margin: auto;background-color: blanchedalmond;}
+#icon ul{}
+#icon ul li{width: 220px; height: 200px; text-align: center; float: left; background-color: goldenrod; margin: 10px;}
+#icon ul li a{width: 220px; height: 200px;line-height: 1.5;}
+#icon ul li a:hover{background-color: rgba(255, 255, 255, 0.3);}
+#icon ul li a img{margin: auto;}
+#icon ul li a h3{color:#0066cc;}
+#icon ul li a p{font-size: 14px;color: lightgray;}
+
+/* footer */
+footer{clear: both; width: 1000px; height: 150px;background-color: #0066cc;}
+
+footer div{width: 500px; height: 150px; float: left;}
+
+footer div.foot-left {}
+footer div.foot-left  ul{}
+footer div.foot-left  ul li{float: left;}
+footer div.foot-left  ul li a{}

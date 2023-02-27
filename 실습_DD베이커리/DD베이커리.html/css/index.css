@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* reset -------------------------------------------------------------------------------*/
+*{margin: 0;padding: 0;list-style: none;box-sizing: border-box;font-family: "맑은 고딕";color: #333}
+a{text-decoration: none;display: block;}
+img{display: block;}
+.hidden{display: none;}
+
+/* wrap area -------------------------------------------------------------------------------*/
+#wrap{width: 960px;height: 1200px;margin: auto;}
+
+/* header area-------------------------------------------------------------------------------*/
+header{width: 960px;height: 150px;float: left;/*header와 slide 벌어짐 해결*/}
+
+/* header logo */
+header h1{float: left;width: 250px;height: 150px;}
+
+/* header nav */
+header nav{float: right;position: relative;z-index: 5;/*slide 이미지 앞으로 메뉴가 올라오게 만들기 위해*/margin-top: 80px;}
+
+/* 1차, 2차 공통 */
+header nav ul li a{text-align: center;}
+/* 1차 메뉴 */
+header nav ul.gnb > li{float: left;}
+header nav ul.gnb > li > a{padding: 10px 30px;font-weight: bold;font-size: 18px;color: #7b422e;}
+header nav ul.gnb > li:hover > a{background-color: #bb692d;color: #fff;border-radius: 10px 10px 0 0;}
+/* 2차 메뉴 */
+header nav ul.gnb > li > ul.sub{display: none;}
+header nav ul.gnb > li:hover > ul.sub{display: block;}
+header nav ul.gnb > li > ul.sub li a{background-color: #ff9041;padding: 10px 0;}
+header nav ul.gnb > li > ul.sub li a:hover{text-decoration: underline;}
+
+/* main slide area : fade in/out ---------------------------------------------------------------------------- */
+#main-slide{clear: both; position: relative; width: 960px; height: 400px; overflow: hidden;}
+#main-slide ul li a img{position: absolute; top: 0;left: 0;}
+
+#main-slide div.text-wrap{position: absolute;width: 250px; height: 80px;background-color: 300px;top: 0;bottom: 0;left: 0;right: 0;margin: auto;border-radius: 10px;background-color: rgba(255, 255, 255, 0.8);padding: 10px 0;}
+#main-slide div.text-wrap p.text1{text-align: center;font-size: 23px;font-weight: bold;color: #7b422e;}
+#main-slide div.text-wrap p.text2{text-align: center;font-size: 18px;margin-top: 5px;}
+
+/* 공지사항과 파트너 공통 -------------------------------------------------------------------------------------*/
+.sec-all{width: 480px;height: 270px;float: left;}
+.sec-all h2{width: 470px; height: 30px; margin: 10px auto;text-align: center;font-size: 20px;border-bottom: 3px solid #7b422e;}
+
+/* 공지사항 */
+#notice table{width: 470px;height: 200px;margin: auto;border-collapse: collapse;font-size: 15px;}
+#notice table tr:nth-child(even){background-color: antiquewhite;}
+#notice table tr th{color: #bb692d;}
+#notice table tr td a:hover{text-decoration: underline;}
+
+/* partner */
+#partner ul li{width: 470px;height: 95px;background-color:antiquewhite;}
+#partner ul li:first-child{margin-bottom: 10px;}
+#partner ul li a {width: 270px;margin: auto;}
+#partner ul li a img{width: 100%;}
+
+/* 아이콘 영역------------------------------------------------------------------------ */
+#icon-wrap{clear: both; width: 600px;height: 230px;;margin: auto;}
+#icon-wrap figure{width: 180px; height: 230px;float: left;}
+#icon-wrap figure:nth-child(3){margin: 0 30px;}
+#icon-wrap figure img{width: 100%;}
+#icon-wrap figure figcaption{background-color: #ff9041;width: 150px;height: 40px;border-radius: 10px;margin: auto;text-align: center;line-height: 40px;color: bisque;cursor: pointer;transition: all 0.2s;}
+#icon-wrap figure figcaption:hover{background-color: #7b422e;}
+
+/* footer area------------------------------------------------------------------------------ */
+footer{width: 960px;height: 150px; background-color: #7b422e;}
+
+/* footer left, right 공통 */
+footer div{width: 480px; height: 120px;float: left;font-size: 14px;}
+
+/* footer left */
+footer div.foot-left nav ul{margin: 50px 0 0 50px;}
+footer div.foot-left nav ul li{float: left;}
+footer div.foot-left nav ul li a{color: #fff;}
+footer div.foot-left nav ul li a:hover{text-decoration: underline;}
+footer div.foot-left nav ul li a::after{content: "|";padding: 0 10px;}
+footer div.foot-left nav ul li:last-child a::after{content: "";}
+/* footer right */
+footer div.foot-right address{font-style: normal;color: #fff;margin-top: 20p;}
